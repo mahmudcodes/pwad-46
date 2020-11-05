@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Table</title>
+	<style>
+		table, td, th{
+			border: 1px solid gray;
+			border-spacing: 0;
+			border-collapse: collapse;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Simple Table</h2>
+	<table>
+		<caption style="padding-bottom: 10px;">Details</caption>
+		<tr>
+			<th>ID</th>
+			<th colspan="2">Name/E-mail</th>
+			
+			<th>Phone</th>
+			<th>Address</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>1261852</td>
+			<td>Rakib Islam</td>
+			<td>rakib25@gmail.com</td>
+			<td>01852-259632</td>
+			<td>Rajshahi</td>
+			<td>Ok</td>
+		</tr>
+		<tr>
+			<td>1261842</td>
+			<td>Eliyas Akondo</td>
+			<td>eliyas5@gmail.com</td>
+			<td>01852-259692</td>
+			<td>Dhaka</td>
+			<td>Ok</td>
+		</tr>
+		<tr>
+			<td>1261822</td>
+			<td>Habib Islam</td>
+			<td>habib1@gmail.com</td>
+			<td>01832-259632</td>
+			<td rowspan="3">Rajshahi</td>
+			<td>Not Ok</td>
+		</tr>
+		<tr>
+			<td>1261812</td>
+			<td>Firoj Islam</td>
+			<td>firoj112@gmail.com</td>
+			<td>01152-259632</td>
+			
+			<td>Ok</td>
+		</tr>
+		<tr>
+			<td>1261857</td>
+			<td>Midul Islam</td>
+			<td>midul69@gmail.com</td>
+			<td>01952-259632</td>
+			
+			<td>Not Ok</td>
+		</tr>
+	</table>
+
+	<h2>Colspan & Rowspan Table</h2>
+	<table>
+		<tr>
+			<th>ID</th>
+			<th colspan="3">Name/E-mail</th>
+			
+			
+			<th>Address</th>
+			<th>Status</th>
+		</tr>
+		<tr>
+			<td>1261852</td>
+			<td>Rakib Islam</td>
+			<td>rakib25@gmail.com</td>
+			<td>01852-259632</td>
+			<td>Rajshahi</td>
+			<td>Ok</td>
+		</tr>
+		<tr>
+			<td>1261842</td>
+			<td colspan="3">Eliyas Akondo</td>
+			
+
+			<td rowspan="4">Rajshahi</td>
+			<td>Ok</td>
+		</tr>
+		<tr>
+			<td>1261822</td>
+			<td>Habib Islam</td>
+			<td rowspan="3">habib1@gmail.com</td>
+			<td>01832-259632</td>
+			
+			<td>Not Ok</td>
+		</tr>
+		<tr>
+			<td>1261812</td>
+			<td>Firoj Islam</td>
+			
+			<td>01152-259632</td>
+			
+			<td>Ok</td>
+		</tr>
+		<tr>
+			<td>1261857</td>
+			<td>Midul Islam</td>
+			
+			<td>01952-259632</td>
+			
+			<td>Not Ok</td>
+		</tr>
+	</table>
+	<h2>Colspan & Rowspan</h2>
+	<table style="width: 500px; height: 300px; text-align: center; background: lightcyan">
+		<tr>
+			<td colspan="3">A</td>
+
+			
+		</tr>
+		<tr>
+			<td>D</td>
+			<td rowspan="2">E</td>
+			<td>F</td>
+		</tr>
+		<tr>
+			<td>G</td>
+			
+			<td>I</td>
+		</tr>
+	</table>
+</body>
+</html>
