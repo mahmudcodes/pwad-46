@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Table</title>
+	<style>
+		table{
+			width: 50%;
+		}
+		thead{
+			background-color: #30D56A;
+		}
+		td{
+			padding: 15px;
+		}
+		tbody{
+			background-color: #BCF6F4;
+		}
+		tfoot{
+			background-color: #14A19F;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Table with thead, tfoot, tbody</h2>
+	<table>
+		<thead>
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>Roll</td>
+				<td>Address</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Hasan</td>
+				<td>5</td>
+				<td>Dhaka</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Abdul</td>
+				<td>2</td>
+				<td>Rajshahi</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Midul</td>
+				<td>6</td>
+				<td>Pabna</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">Total 3 Students</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
