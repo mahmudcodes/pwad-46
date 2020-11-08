@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Form</title>
+</head>
+<body>
+	<h2>Information</h2>
+	<form action="">
+		<label class="fullname">Full Name : </label><br>
+		<input type="text" name="fullname" placeholder="Enter Your Full Name"><br>
+		<label for="gender">Gender : </label><br>
+		Male <input type="radio" name="gender" value="male">
+		Female <input type="radio" name="gender" value="female">
+		<br>
+		<label for="email">Email : </label><br>
+		<input type="email" name="email" placeholder="Enter Your Valid Email"><br>
+		<label for="">Password : </label><br>
+		<input type="password" name="password"><br>
+		<label for="">Repeat Password : </label><br>
+		<input type="password" name="repeat_password"><br>
+		<label for="district">Districts : </label><br>
+		<select name="district" id="">
+			<option value="">Select One</option>
+			<option value="">Dhaka</option>
+			<option value="">Rajshahi</option>
+			<option value="">Khulna</option>
+			<option value="">Sylhet</option>
+			<option value="">Barishal</option>
+		</select>
+		<br>
+		<label for="">Hobbies : </label><br>
+		Cricket <input type="checkbox" name="cricket" value="cricket">
+		Football <input type="checkbox" name="football" value="football">
+		Baseball <input type="checkbox" name="baseball" value="baseball">
+		Swimming <input type="checkbox" name="swimming" value="swimming">
+		<br>
+
+		<input type="submit" name="submit" value="Send">
+	</form>
+</body>
+</html>
