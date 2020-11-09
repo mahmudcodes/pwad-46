@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Colgroup</title>
+	<style>
+		table, td{
+			border: 1px solid #68DDF6;
+			border-collapse: collapse;
+			font-size: 20px;
+			padding: 20px;
+		}
+		thead{
+			color: #fff;
+			background-color: #D92222;
+		}
+		th{
+			border: 1px solid #fff;
+		}
+	</style>
+</head>
+<body>
+	<h2>Col and Colgroup in table</h2>
+	<table>
+		<colgroup>
+			<col style="background-color: #1AD3C4;">
+			<col span="2" style="background-color: #F87C7C;">
+			<col style="background-color: #478515;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Particular</th>
+				<th>Price</th>
+				<th>Quantity</th>
+			</tr>
+		</thead>
+		<tr>
+			<td>1</td>
+			<td>HDD</td>
+			<td>4000</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Processor</td>
+			<td>4500</td>
+			<td>8</td>
+		</tr>
+	</table>
+</body>
+</html>
