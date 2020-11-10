@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Layouts</title>
+	<style>
+		header{
+			background-color: #CFCDC3;
+			padding: 15px;
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+		}
+		footer{
+			background-color: #CFCDC3;
+			padding: 5px;
+			font-size: 20px;
+			text-align: center;
+			color: #fff;
+			clear: both;
+			min-height: 30px;
+		}
+		nav{
+			width: 20%;
+			float: left;
+			height: 300px;
+			background-color: #56E7A1;
+			padding: 20px 5%;
+			
+		}
+		article{
+			float: left;
+			width: 60%;
+			padding: 20px 5%;
+			background-color: #F7F56A;
+			
+		}
+		article p{
+			line-height: 25px;
+		}
+		nav ul{
+			list-style-type: none;
+			padding: 0;
+		}
+		nav ul li{
+			line-height: 36px;
+			font-size: 25px;
+		}
+		nav ul li a{
+			text-decoration: none;
+			color: #FD0505;
+			display: block;
+			text-align: center;
+			padding: 8px;
+		}
+		nav ul li a:hover{
+			color: #21F20B;
+			background-color: #F71414;
+		}
+		#active{
+			background-color: #F8F4F4;
+		}
+		#active:hover{
+			background-color: #F71414;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h2>Cities</h2>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#" id="active">London</a></li>
+				<li><a href="#">Paris</a></li>
+				<li><a href="#">Tokyo</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<h1>London</h1>
+			<p>1. London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+			<p>2. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+			<p>3. London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+			<p>4. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+			<p>5. London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+			<p>6. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+		</article>
+	</section>
+
+	<footer>
+		<p>Footer - &copy; 2020</p>
+	</footer>
+</body>
+</html>
