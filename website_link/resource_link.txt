@@ -1,5 +1,12 @@
-https://material.io
-pixie.exe - color picker
-div.container diye tab
-edit - line - reindent 
-code play ground - search - 11/11/2020
+***11/11/2020
+		https://material.io
+		pixie.exe - color picker
+		div.container diye tab
+		edit - line - reindent 
+		code play ground - search - 11/11/2020
+*12/11/2020
+		https://app.prntscr.com/en/index.html - lightshot
+		Bootstrap 3 snippets - sublime text package manager via command pallet
+		Bootstrap 3 auto complete - sublime text package manager via command pallet
+
+
