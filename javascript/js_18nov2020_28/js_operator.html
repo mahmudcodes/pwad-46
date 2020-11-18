@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS-->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<title>Javascript Operator</title>
+	<script>
+		
+	</script>
+	<style>
+		
+	</style>
+</head>
+<body>
+	<h2>Arithmetic Operator</h2>
+	<script>
+		var x = 5;
+		document.write(x++ + x++ + x++ + "<br>"); //post increment operator
+
+		document.write(x + "<br>");
+
+		var q = 10;
+		var s = 2;
+		var r  = q % s;
+
+		document.write(r + "<br>");
+
+		document.write((10 + 5) * 2 + "<br>");
+
+		document.write(10 + 5 * 2 + "<br>");
+	</script>
+
+	<h2>Assignment Operator</h2>
+
+	<script>
+		var abc = "Mahmud, ";
+		abc += "How are you?";
+		document.write(abc + "<br>");
+		var num1 = 50;
+		num1 %= 20;
+		document.write(num1 + "<br>");
+	</script>
+
+	<h2>Comparison Operator</h2>
+
+	<script>
+		var a = "50";
+		var b = "50";
+		
+		if(a != b){
+			document.write("A and B are Equal. <br>");
+		}
+		else{
+			document.write("A and B are not Equal. <br>");
+		}
+		
+		document.write("Value a = " + a + " Value b = " + b + "<br>");
+
+		if(a !== b){
+			document.write("A and B are not Equal in value and type. <br>");
+		}
+		else{
+			document.write("A and B are Equal in value and type. <br>");
+		}
+
+		val = 12;
+		document.write(typeof(val));
+
+	</script>
+
+	<!-- jQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
