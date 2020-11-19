@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Function</title>
+</head>
+<body>
+	<script>
+		function fullName(a, b) {
+			return a + " " + b + "<br>";
+		}
+
+		document.write(fullName("Mahmud", "Hasan"));
+		document.write(fullName("Eliyas", "Akondo"));
+		document.write(fullName("Maruf", "Rahman"));
+
+		function fullName1(c, d) {
+			var disply = c + " " + d + "<br>";
+			document.write(disply);
+		}
+
+		fullName1("Kawsar", "Ali");
+	</script>
+	<h2>Convart Taka</h2>
+	<script>
+		function convertTaka(dollar, rate){
+			return dollar * rate;
+		}
+		var amount = convertTaka(500, 85);
+		document.write(amount);
+	</script>
+</body>
+</html>

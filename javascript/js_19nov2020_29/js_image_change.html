@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Change</title>
+</head>
+<body>
+	
+	<script>
+		function catToTiger(){
+			document.imgDisplay.src = 'image/tiger.jpg';
+		}
+		function tigerToCat(){
+			document.imgDisplay.src = 'image/cat.jpg';
+		}
+	</script>
+
+	<a href="" onmouseover="catToTiger()" onmouseout="tigerToCat()"><img name="imgDisplay" src="image/cat.jpg" alt="" width="400"></a>
+	
+</body>
+</html>
