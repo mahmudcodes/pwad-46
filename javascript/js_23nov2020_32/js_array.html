@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS-->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<title>Javascript Basic</title>
+	<!-- <script>
+		alert("Javascript alert from head section");
+	</script> -->
+	<style>
+		
+	</style>
+</head>
+<body>
+	<h1 id="show">Content</h1>
+	<script>
+		var students = ["Siyam", "Tanim", "Alim", "Shihab"];
+		
+		
+		students[4] = "Hasan";
+		students[5] = "Abdullah";
+		students.push('Ibrahim');
+		document.getElementById('show').innerHTML = students;
+		document.write(students.length + "<br>");
+		document.write(students[students.length - 1]);
+		students.sort();
+		document.write("<br> <b style=\"color: red\"> After sort : </b>" + students);
+		console.log(students);
+	</script>
+	
+	<!-- jQuery -->
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
