@@ -22,13 +22,13 @@
 		var display;
 
 		switch (true) {
-			case result >= 80:
+			case result >= 80 && result <= 100 :
 				display = "Excelent";
 				break;
-			case result >= 65:
+			case result >= 65 && result <= 80:
 				display = "very good";
 				break;
-			case result >= 35:
+			case result >= 35 && result <= 65:
 				display = "good";
 				break; 
 			default:
