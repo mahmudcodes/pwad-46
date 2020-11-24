@@ -17,8 +17,24 @@
 <body>
 
 	<script>
-		var x = "This is global";
-		
+		var result = parseInt(prompt());
+		//var result = 31;
+		var display;
+
+		switch (true) {
+			case result >= 80:
+				display = "Excelent";
+				break;
+			case result >= 65:
+				display = "very good";
+				break;
+			case result >= 35:
+				display = "good";
+				break; 
+			default:
+				display = "Fail";
+		}
+		document.write(display);
 	</script>
 	
 	<!-- jQuery -->

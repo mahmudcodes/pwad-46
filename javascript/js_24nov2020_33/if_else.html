@@ -17,7 +17,25 @@
 <body>
 
 	<script>
-		var x = "This is global";
+		var x = 80;
+		var y = 100;
+		if(x > y || x != y){
+			document.write("X is bigger than Y or <b> not equal</b>");
+		}
+		else{
+			document.write("X and Y are <b> equal </b> ");
+		}
+
+		var x = 45;
+		var y = 35;
+		var z = (x <= y);
+		if(z){
+			var result = "This is true";
+		}
+		else{
+			var result = "This is not true";
+		}
+		document.write("<br>" + result);
 		
 	</script>
 	

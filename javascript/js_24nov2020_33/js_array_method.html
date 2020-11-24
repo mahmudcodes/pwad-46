@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Bootstrap CSS-->
 	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-	<title>Javascript Basic</title>
+	<title>Array Method</title>
 	<!-- <script>
 		alert("Javascript alert from head section");
 	</script> -->
@@ -17,8 +17,15 @@
 <body>
 
 	<script>
-		var x = "This is global";
-		
+		var students = new Array("Wasim", "Kawsar", "Yasir", "Ashif", "Midul");
+		/*
+		students.pop(); // Drop an element from last
+		students.push("Amir"); // Add an element in the last
+		students.shift(); // Drop an element from first
+		students.unshift("Unshift*9", "Shift2", "Shift3"); // Drop an element from first
+		*/
+		students.splice(1, 4, "Khan", "Hasan")
+		console.log(students);
 	</script>
 	
 	<!-- jQuery -->

@@ -11,14 +11,27 @@
 		alert("Javascript alert from head section");
 	</script> -->
 	<style>
-		
+		body{
+			font-size: 30px;
+		}
 	</style>
 </head>
 <body>
 
 	<script>
-		var x = "This is global";
-		
+		var zoo = new Array("zebras", "lions", "apes", "tigers");
+		document.write(zoo + "<br>");
+		zoo.sort(); // sort in ascending
+		document.write(zoo + "<br>");
+		zoo.reverse(); //sort in descending
+		document.write(zoo + "<br>");
+
+		// Array Slice
+
+		var computer = new Array("Dell", "Gateway", "Apple", "IBM", "HP");
+		var computer1 =computer.slice(1, 4);
+		document.write(computer + "<br>");		
+		document.write(computer1 + "<br>");		
 	</script>
 	
 	<!-- jQuery -->

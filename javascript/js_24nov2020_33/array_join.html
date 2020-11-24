@@ -17,8 +17,24 @@
 <body>
 
 	<script>
-		var x = "This is global";
-		
+		/*
+		var trees = new Array("Elm", "Pine", "Oak", "Mango");
+		var bigBush = trees.join(" / ");
+		console.log(bigBush);
+		console.log(typeof(bigBush));
+		var x = 200;
+		var r = x.toString();
+		console.log(r);
+		alert(typeof(x));
+		*/
+		var trees = new Array("Mango", "Apple", "Bananna");
+		var moreTrees = trees.concat("Grape", "Jackfruit","Cucumber", "Avocados", "Guava");
+		console.log(moreTrees);
+
+		for(var i = 0; i<moreTrees.length; i++){
+			var x = i + 1;
+			document.write("Fruits Name: " + x + " = " + moreTrees[i] + "<br>");
+		}
 	</script>
 	
 	<!-- jQuery -->
