@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Registration</title>
+	<style>
+		table, td{
+			margin: 0px auto;
+			
+			border-collapse: collapse;
+			padding: 10px; 
+			width: 40%;
+			font-size: 20px;
+		}
+		caption{
+			padding: 10px;
+			font-weight: bold;
+			font-size: 20px;
+			text-align: left;
+			
+			background: #8C806C;
+			color: #fff;
+		}
+		input, textarea, select{
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		input[type="submit"]{
+			background: #65E574;
+			color: #464444;
+			font-weight: bold;
+			font-size: 15px;
+			cursor: pointer;
+		}
+		input[type="reset"]{
+			background: #FE5050;
+			color: #ddd;
+			font-weight: bold;
+			font-size: 15px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<table>
+			<caption>Student Registration</caption>
+			<tr>
+				<td>ID:</td>
+				<td>
+					<input type="text" placeholder="Enter ID No">
+				</td>
+			</tr>
+			<tr>
+				<td>Name:</td>
+				<td>
+					<textarea name="" id="" cols="22" rows="2" placeholder="Enter Your Name"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Round:</td>
+				<td>
+					<select name="" id="">
+						<option value="">Select Round</option>
+						<option value="">Round 44</option>
+						<option value="">Round 45</option>
+						<option value="">Round 46</option>
+						<option value="">Round 47</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td><label for="">Male</label>
+					<input type="radio" name="gender">
+					<label for="">Female</label>
+					<input type="radio" name="gender">
+				</td>
+			</tr>
+			<tr>
+				<td>Education:</td>
+				<td>
+					<label for="">SSC</label>
+					<input type="checkbox">
+					<label for="">HSC</label>
+					<input type="checkbox">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

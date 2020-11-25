@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Index Page</title>
+	<style>
+		.left{
+			float: left;
+			width: 20%;
+			height: 600px;
+			border: 2px solid #000;
+			margin-right: 20px;
+		}
+		.right{
+			float: left;
+			width: 75%;
+			height: 600px;
+			border: 2px solid #000;
+		}
+		.right iframe{
+			width: 100%;
+			height: 500px;
+			padding: 10px; 
+		}
+		.left ul{
+			margin-top: 250px; 
+		}
+		.left ul li{
+			margin-bottom: 10px;
+			font-size: 20px;
+			color: #000;
+		}
+		.left ul li a{
+			text-decoration: none;
+		}
+		.left ul li a:hover{
+			color: #FF0909;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="left">
+		<ul>
+			<li><a href="std_information.html" target="myList">Student Information</a></li>
+			<li><a href="std_registration.html" target="myList">Student Registration</a></li>
+		</ul>
+	</div>
+	<div class="right">
+		<iframe src="std_information.html" frameborder="0" name="myList"></iframe>
+	</div>
+</body>
+</html>

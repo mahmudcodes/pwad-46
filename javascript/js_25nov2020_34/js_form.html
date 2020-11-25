@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS-->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<title>Javascript Basic</title>
+	<!-- <script>
+		alert("Javascript alert from head section");
+	</script> -->
+	<style>
+		
+	</style>
+</head>
+<body>
+	<form action="" name="info" method="post">
+		<input type="text" name="fname" placeholder="Enter First Name" ><br>
+		<input type="text" name="lname" placeholder="Enter Last Name" ><br>
+		<input type="email" name="email" placeholder="Enter Your Email"><br>
+		<textarea name="address" id="" cols="30" rows="10" placeholder="Enter Address"></textarea><br>
+		<select name="dist" id="">
+			<option value="">Select</option>
+			<option value="Dhaka">Dhaka</option>
+			<option value="Rajshahi">Rajshahi</option>
+			<option value="Naogoan">Naogoan</option>
+		</select><br>
+		<input type="radio" name="gender" value="Male"> Male
+		<input type="radio" name="gender" value="Female"> Female<br>
+		<input class="check" type="checkbox" name="skill" value="HTML"> HTML
+		<input class="check" type="checkbox" name="skill" value="CSS"> CSS 
+		<input class="check" type="checkbox" name="skill" value="JS"> JS<br>
+
+		<button type="submit" onclick="myFunc()">Submit</button>
+	</form>
+	
+	<script>
+		function myFunc(){
+			var fn = document.info.fname.value;
+			var ln = document.info.lname.value;
+			var email = document.info.email.value;
+			var address = document.info.address.value;
+			var dist = document.info.dist.value;
+			var gender = document.info.gender.value;
+			var skill = document.info.skill.value;
+
+			var checkedValue = null; 
+			var inputElements = document.getElementsByClassName('check');
+			for(var i=0; inputElements[i]; ++i){
+				if(inputElements[i].checked){
+					checkedValue = inputElements[i].value;
+					break;
+				}
+			}
+
+			var fulldetails = 
+			"<p> Name : " + fn + " "  + ln + " </p><p>Email: " + email + "<p> Address : " + address + " </p><p>District: " + dist + "</p><p>Gender : " + gender + "</p><p> Skill : " + checkedValue + "</p>";
+			document.write(fulldetails);
+		}
+	</script>
+	
+	<!-- jQuery -->
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
