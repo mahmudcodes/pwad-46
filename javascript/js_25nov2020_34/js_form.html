@@ -15,6 +15,7 @@
 	</style>
 </head>
 <body>
+	
 	<form action="" name="info" method="post">
 		<input type="text" name="fname" placeholder="Enter First Name" ><br>
 		<input type="text" name="lname" placeholder="Enter Last Name" ><br>
@@ -28,9 +29,12 @@
 		</select><br>
 		<input type="radio" name="gender" value="Male"> Male
 		<input type="radio" name="gender" value="Female"> Female<br>
-		<input class="check" type="checkbox" name="skill" value="HTML"> HTML
-		<input class="check" type="checkbox" name="skill" value="CSS"> CSS 
-		<input class="check" type="checkbox" name="skill" value="JS"> JS<br>
+		<input type="checkbox" class="skill" value="HTML"> HTML
+		<input type="checkbox" class="skill" value="CSS"> CSS 
+		<input type="checkbox" class="skill" value="JS"> JS
+		<input type="checkbox" class="skill" value="Bootstrap"> Bootstrap
+		<input type="checkbox" class="skill" value="PHP"> PHP
+		<input type="checkbox" class="skill" value="MySql"> MySql<br>
 
 		<button type="submit" onclick="myFunc()">Submit</button>
 	</form>
@@ -43,20 +47,20 @@
 			var address = document.info.address.value;
 			var dist = document.info.dist.value;
 			var gender = document.info.gender.value;
-			var skill = document.info.skill.value;
 
-			var checkedValue = null; 
-			var inputElements = document.getElementsByClassName('check');
-			for(var i=0; inputElements[i]; ++i){
+			var checkedValue = []; 
+			var inputElements = document.getElementsByClassName('skill');
+			for(var i=0; i<inputElements.length; i++){
 				if(inputElements[i].checked){
-					checkedValue = inputElements[i].value;
-					break;
+					checkedValue.push(inputElements[i].value);
+					
 				}
 			}
 
 			var fulldetails = 
-			"<p> Name : " + fn + " "  + ln + " </p><p>Email: " + email + "<p> Address : " + address + " </p><p>District: " + dist + "</p><p>Gender : " + gender + "</p><p> Skill : " + checkedValue + "</p>";
+			"<p> Name : " + fn + " "  + ln + " </p><p>Email: " + email + "</p><p> Address : " + address + " </p><p>District: " + dist + "</p><p>Gender : " + gender + "</p><p> Skill : " + checkedValue + "</p>";
 			document.write(fulldetails);
+			//document.getElementById("demo").innerHTML = fulldetails;
 		}
 	</script>
 	

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Check Box</title>
+</head>
+<body>
+	<form action="">
+		<input type="checkbox" value="HTML" class="skills"> HTML
+		<input type="checkbox" value="CSS" class="skills"> CSS
+		<input type="checkbox" value="Bootstrap" class="skills"> Bootstrap
+		<input type="checkbox" value="JS" class="skills"> JS
+		<input type="checkbox" value="PHP" class="skills"> PHP
+		<input type="checkbox" value="Laravel" class="skills"> Laravel<br>
+
+		<button type="submit" onclick="myFunc()">Submit</button>
+	</form>
+	<script>
+		function myFunc(){
+			var check = [];
+			
+			var inputValue = document.getElementsByClassName('skills');
+
+			for(var i=0; i<inputValue.length; i++){
+				
+				if(inputValue[i].checked){
+console.log(inputValue[i]);
+					//check.push(inputValue[i].value);
+					
+				}
+			}
+			//document.write(check);
+		}
+		myFunc();
+		var x= 3;
+		var y = "15";
+		
+		
+		var n = "A";
+		switch(n){
+			case "A":
+			document.write("1");
+			break;
+			case "B":
+			document.write("2");
+			break;
+			default:
+			document.write("3");
+		}
+		//document.write("<br>" + Math.min(15,5,3,0));
+				
+	</script>
+</body>
+</html>
