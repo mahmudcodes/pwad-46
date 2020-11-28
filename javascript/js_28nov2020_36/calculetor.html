@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<style>
+		input[type="number"]{
+			padding: 10px;
+			margin: 10px;
+			font-size: 20px;
+			background: #ddd;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<form action="" name="myForm">
+		<label for="">Number One:</label>
+		<input type="number" name="num1"><br>
+		<label for="">Number Two:</label>
+		<input type="number" name="num2"><br>
+		<input type="submit" value="Summation" onclick="sum()">
+		<input type="submit" value="Substraction" onclick="sub()">
+		<input type="submit" value="Multiply" onclick="mul()">
+		<input type="submit" value="Division" onclick="div()">
+		<input type="submit" value="Modulus" onclick="mod()">
+	</form>
+	<script>
+		var n1, n2, sum, sub, mul, div, mod;
+		function sum(){
+			n1 = parseInt(document.myForm.num1.value);
+			n2 = parseInt(document.myForm.num2.value);
+			sum = n1 + n2;
+			document.write(sum);
+		}
+		function sub(){
+			n1 = document.myForm.num1.value;
+			n2 = document.myForm.num2.value;
+			sub = n1 - n2;
+			document.write(sub);
+		}
+		function mul(){
+			n1 = document.myForm.num1.value;
+			n2 = document.myForm.num2.value;
+			mul = n1 * n2;
+			document.write(mul);
+		}
+		function div(){
+			n1 = document.myForm.num1.value;
+			n2 = document.myForm.num2.value;
+			div = n1 / n2;
+			document.write(div);
+		}
+		function mod(){
+			n1 = document.myForm.num1.value;
+			n2 = document.myForm.num2.value;
+			mod = n1 % n2;
+			document.write(mod);
+		}
+	</script>
+</body>
+</html>

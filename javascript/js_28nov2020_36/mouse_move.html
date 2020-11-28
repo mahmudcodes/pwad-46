@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mouse Move</title>
+</head>
+<body onkeypress="myFunc()">
+	<p id="demo"></p>
+	<script>
+		var result = 0;
+		function myFunc() {
+			result += 1;
+			// var vals = document.myForm.view.value = result;
+			document.getElementById('demo').innerHTML = result;
+			//console.log(vals);
+		}
+	</script>
+</body>
+</html>
