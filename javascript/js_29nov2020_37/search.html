@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Slice Search</title>
+</head>
+<body>
+	<script>
+		// var searchThis = "www.sandlight.com"
+		// // var stringer3 = searchThis.slice(4, 13);
+		// // var stringer3 = searchThis.slice(searchThis.search(/com/));
+		// // var stringer3 = searchThis.search(/.com/);
+		// var stringer3 = searchThis.slice(14);
+		// document.write(stringer3);
+		
+		var line = "Alim and Arif are two brothers";
+		var show = line.search(/Arif/);
+		var show = line.slice(line.search(/Arif/));
+		document.write(show);
+	</script>
+</body>
+</html>

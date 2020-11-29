@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS-->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<title>Javascript Basic</title>
+	<!-- <script>
+		alert("Javascript alert from head section");
+	</script> -->
+	<style>
+		
+	</style>
+</head>
+<body>
+	<form action="" name="myForm" method="post">
+		<label for="">MCQ: </label>
+		<input type="number" name="mcq" required><br><br>
+		<label for="">Descriptive: </label>
+		<input type="number" name="descriptive" required><br><br>
+		<label for="">Evidence: </label>
+		<input type="number" name="evidence" required><br><br>
+		<input type="submit" value="Submit" onclick="return check()"><br>
+	</form>
+	<div id="demo"></div>
+	<script>
+		function check(){
+			var mcq = parseInt(document.myForm.mcq.value);
+			var descrip = parseInt(document.myForm.descriptive.value);
+			var evidence = document.myForm.evidence.value;
+			
+			if(mcq>=80 && descrip>=60 && evidence>=60){
+				document.getElementById('demo').innerHTML = "<p style='color:green; font-size: 20px; font-weight: bold;'>You have passed</p>";
+				return false;
+			}
+			else{
+				document.getElementById('demo').innerHTML = "<p style='color:red; font-size: 20px; font-weight: bold;'>You have failed</p>";
+				return false;
+			}
+		}
+	</script>
+	
+	<!-- jQuery -->
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
