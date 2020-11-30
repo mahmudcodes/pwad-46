@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Window Open</title>
+</head>
+<body>
+	<script>
+		var mywindow;
+		function openwin(){
+			var sub = document.myForm.subject.value;
+			var email = document.myForm.email.value;
+			var message = document.myForm.message.value;
+			// var ch = 'width=400, height=400, top=200, left=500';
+			// mywindow = window.open('/', 'test', ch);
+			mywindow = window.open("", "mywindow","width=400, height=400, top=200, left=500");
+			mywindow.document.write("<h1>Feedback Result</h1><p>Subject: " + sub + "</p><p>Email : " + email + "</p><p>Message : " + message + "</p>");
+		}
+/* 
+`scrollbars=no,
+resizable=no,
+status=no,
+location=no,
+toolbar=no,
+menubar=no,
+width=0,
+height=0,
+left=-1000,
+top=-1000`;
+*/
+	function closewin(){
+		mywindow = window.close();
+		console.log(mywindow);
+	}
+	</script>
+	
+	<form action="" name="myForm" method="post">
+		<label for="">Subject: </label><br>
+		<input type="text" name="subject"><br>
+		<label for="">Email: </label><br>
+		<input type="email" name="email"><br>
+		<label for="">Message: </label><br>
+		<textarea name="message" id="" cols="30" rows="10"></textarea><br>
+		<button onclick="openwin()">Submit</button>
+		<button type="button" onclick="closewin()">Close</button>
+	</form>
+</body>
+</html>

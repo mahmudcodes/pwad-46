@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS-->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<title>Javascript With</title>
+	<!-- <script>
+		alert("Javascript alert from head section");
+	</script> -->
+	<style>
+		
+	</style>
+</head>
+<body>
+
+	<form action="" name="myForm" method="post">
+		<label for="">Full Name : </label><br>
+		<input type="text" name="fullName"><br><br>
+		<label for="">Address : </label><br>
+		<textarea name="address" id="" cols="30" rows="10"></textarea><br><br>
+		<label for="">Gender : </label><br>
+		Male <input type="radio" name="gender" value="Male">
+		Female <input type="radio" name="gender" value="Female"><br><br>
+		<button onclick="details()">Show Details</button><br>
+	</form>
+	
+	<div id="demo"></div>
+	<script>
+		function details(){
+			with(document.myForm){
+				var fn = fullName.value;
+				var add = address.value;
+				var gend = gender.value;
+			}
+			var result = "Name : " + fn + "<br>Address : " + add + "<br>Gender : " + gend;
+			document.getElementById('demo').innerHTML = result;
+		}
+	</script>
+	
+	<!-- jQuery -->
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>

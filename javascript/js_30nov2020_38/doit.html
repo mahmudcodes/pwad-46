@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Do it</title>
+</head>
+<body>
+	<script>
+		function doit(){
+			document.myForm.fullname.value = "Mahmud Hasan";
+			document.myForm.submit.value = "I have clicked";
+		}
+	</script>
+	<p>:imp:</p>
+	<form action="" name="myForm" method="post">
+		<input type="text" name="fullname">
+		<input type="button" name="submit" value="Submit" onclick="doit()">
+		<button onclick="javascript:document.myForm.reset()">Click Me</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Screen</title>
+</head>
+<body>
+	<script>
+		var appcode = self.navigator.appCodeName;
+		var appname = self.navigator.appName;
+		var appversion = self.navigator.appVersion;
+		var plat = self.navigator.platform;
+		var agent = self.navigator.userAgent;
+		var lang = self.navigator.language;
+		var ah = screen.availHeight;
+		var h = screen.height;
+		var aw = screen.availWidth;
+		var w = screen.width;
+		var c = screen.colorDepth;
+
+		var message = "Available Height: " + ah + "\n";
+		message += "Available Width: " + aw + "\n";
+		message += "Width: " + w + "\n";
+		message += "Height: " + h + "\n";
+		message += "Color Depth: " + c + " bit\n";
+		message += "App: " + appcode + "\n";
+		message += "App Name: " + appname + "\n";
+		message += "App Version: " + appversion + "\n";
+		message += "Platfrom: " + plat + "\n";
+		message += "User agent: " + agent + "\n";
+		message += "Language: " + lang + "\n";
+
+		alert(message);
+	</script>
+</body>
+</html>
