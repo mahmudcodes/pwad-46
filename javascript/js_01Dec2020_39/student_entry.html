@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS-->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<title>Student Entry</title>
+	<!-- <script>
+		alert("Javascript alert from head section");
+	</script> -->
+	<style>
+		
+	</style>
+</head>
+<body>
+	<h1>Data Entry Form</h1>
+	<form action="" name="myForm" method="post">
+		<table>
+			<tr>
+				<td><label for="">Student ID: </label></td>
+				<td><input type="text" name="std_id"></td>
+				<b for="" class="stdId"></b>
+			</tr>
+			<tr>
+				<td><label for="">Name:</label></td>
+				<td><input type="text" name="my_name"></td>
+			</tr>
+			<tr>
+				<td><label for="">Course:</label></td>
+				<td><input type="text" name="course"></td>
+			</tr>
+			<tr>
+				<td><label for="">Year/Section:</label></td>
+				<td><input type="text" name="year_section"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="button" onclick="value_submit()">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+
+	<script>
+		function value_submit(){
+			var std_id = document.myForm.std_id.value;
+			var my_name = document.myForm.my_name.value;
+			var course = document.myForm.course.value;
+			var year_section = document.myForm.year_section.value;
+			var text = "<h2>Student Information</h2>";
+			if(std_id == null || std_id == "") {
+				var text = document.myForm.std_id.value = "Enter your student name";
+				document.myForm.std_id.style = "color: red;"
+			}
+			else if(my_name == null || my_name == "") {
+				var text = document.myForm.my_name.value = "Enter your student name";
+				document.myForm.my_name.style = "color: red;"
+			}
+			else if(course == null || course == "") {
+				var text = document.myForm.course.value = "Enter your course";
+				document.myForm.course.style = "color: red;"
+			}
+			else if(year_section == null || year_section == "") {
+				var text = document.myForm.year_section.value = "Enter your year/section";
+				document.myForm.year_section.style = "color: red;"
+			}
+			else{
+				var myWindow = window.open("", "myForm", "width=400, height=400, top=100, left=400");
+				myWindow.document.write(text + "<p>Student ID: " + std_id + "</p><p>Student Name: " + my_name + "</p><p>Course: " + course + "</p><p>Year/Section: " + year_section + "</p>");
+			}
+		}
+	</script>
+	
+	<!-- jQuery -->
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap JS -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>

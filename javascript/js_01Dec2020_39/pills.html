@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Javascript Basic</title>
+	<!-- <script>
+		alert("Javascript alert from head section");
+	</script> -->
+	<style>
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Centered Tabs</h3>
+  <p>To center/justify the tabs and pills, use the .nav-justified class. Note that on screens that are smaller than 768px, the list items are stacked (content will remain centered).</p>
+		<div class="row">
+			<div class="col-md-9">
+				<ul class="nav nav-pills nav-jstified">
+					<li class="active"><a href="#">Home </a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<!-- <h3>Bootstrap Tabs</h3> -->
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#">Home </a></li>
+					<li class="dropdown">
+						<a href="#" data-toggle="dropdown" class="dropdown-toggle">Services <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Web Design</a></li>
+							<li><a href="#">Web Development</a></li>
+							<li><a href="#">SEO</a></li>
+							<li><a href="#">Digital Marketing</a></li>
+						</ul>
+					</li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="clearfix visible-lg"></div>
+		</div>
+		<div class="row">
+			<ul class="nav nav-tabs nav-jstified">
+					<li class="active"><a href="#">Home </a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+		</div>
+		<div class="row">
+			<h2>Dynamic Pills</h2>
+			<p>To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+			<ul class="nav nav-pills">
+				<li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+				<li><a data-toggle="pill" href="#services">Services</a></li>
+				<li><a data-toggle="pill" href="#about">About</a></li>
+				<li><a data-toggle="pill" href="#contact">Contact</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+					<h3>Home Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="services" class="tab-pane fade">
+					<h3>Service Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="about" class="tab-pane fade">
+					<h3>About Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="contact" class="tab-pane fade">
+					<h3>Contact Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<h3>Toggleable / Dynamic Tabs</h3>
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+				<li><a data-toggle="tab" href="#services">Services</a></li>
+				<li><a data-toggle="tab" href="#about">About</a></li>
+				<li><a data-toggle="tab" href="#contact">Contact</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+					<h3>Home Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="services" class="tab-pane fade">
+					<h3>Service Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="about" class="tab-pane fade">
+					<h3>About Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="contact" class="tab-pane fade">
+					<h3>Contact Tab</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script>
+		alert("Javascript alert from body section");
+	</script> -->
+	
+	<!-- jQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    
+    <!-- Bootstrap JS -->
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
