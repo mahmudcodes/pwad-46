@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mall</title>
+</head>
+<body>
+	<script>
+		function Mall(stName, shop, product){
+			this.stName = stName;
+			this.shop = shop;
+			this.product = product;
+		}
+		var Bloomfield = new Mall("Mahmud Hasan", "Ryans Computer", "Mobile");
+		var display = Bloomfield.stName + "<br>";
+		display += Bloomfield.shop + "<br>";
+		display += Bloomfield.product;
+
+		document.write(display);
+	</script>
+</body>
+</html>

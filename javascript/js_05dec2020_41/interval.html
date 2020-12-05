@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interval</title>
+	<style>
+		img{
+			height: 250px;
+			width: 250px;
+		}
+	</style>
+</head>
+<body>
+	<img src="image/cat.jpg" alt="cat_image" name="catTiger">
+	<script>
+		function interval(){
+			window.setInterval("document.catTiger.src = 'image/tiger.jpg'", 9000)
+		}
+	</script>
+	<a href="#" onclick="interval()">Click Here</a>
+</body>
+</html>
