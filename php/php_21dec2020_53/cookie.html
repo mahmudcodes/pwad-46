@@ -1,0 +1,8 @@
+<script>
+	var d = new Date();
+ 	var n = d.getUTCMinutes() + 2;
+	document.cookie = "username=Alim; expires=n; path=/";
+	document.cookie = "age=25; expires=n; path=/";
+	var all_cookies = document.cookie;
+	document.write(all_cookies);
+</script>
