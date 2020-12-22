@@ -1,4 +1,4 @@
-<?
+<?php
 
 $states = array("shakil"=>50,"siam"=>60,"ismail"=>40,"shakib"=>80);
 

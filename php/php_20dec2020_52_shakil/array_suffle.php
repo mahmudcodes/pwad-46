@@ -1,4 +1,4 @@
-<?
+<?php
 
 $face = array("h","w","e","i");
 shuffle($face);//it shuffled value...

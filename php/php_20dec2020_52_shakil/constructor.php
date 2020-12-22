@@ -1,4 +1,4 @@
-<?
+<?php
 
 class employee
 {
@@ -10,5 +10,5 @@ class employee
 	}
 }
 
-new employee;//constructor dont need to call...
+new employee; //constructor dont need to call...
 ?>

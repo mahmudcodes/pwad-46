@@ -1,4 +1,4 @@
-<?
+<?php
 
 $cities = array("dhaka","barisal","khulna","sylhet","chattrogram","rajshahi");
 echo "<pre>";

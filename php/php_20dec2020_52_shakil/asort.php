@@ -1,4 +1,4 @@
-<?
+<?php
 
 $states = array("shakil","siam","ismail","shakib");
 echo "<pre>";
