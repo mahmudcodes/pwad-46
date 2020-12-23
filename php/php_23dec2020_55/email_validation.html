@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Email Validation</title>
+</head>
+<body>
+	<form action="" name="myForm">
+		<label for="">Email : </label>
+		<input type="text" name="email"><br>
+		<label for="">Retype Email : </label>
+		<input type="text" name="re_email"><br>
+		<input type="button" value="Submit" onclick="myFunc()">
+	</form>
+	<script>
+		function myFunc(){
+			var email = document.myForm.email.value;
+			var re_email = document.myForm.re_email.value;
+			var check = email.search(/[a-z]+@[a-z]+\.[a-z]{2,4}/);
+			if(email == "" || re_email == ""){
+				alert("Please enter your email address...");
+			}
+			else if(check == -1){
+				alert("Email not valid...");
+			}
+			else if (email != re_email) {
+				alert("Email does not match?");
+			}
+			else {
+				alert("Congratulation! Email submitted...");
+			}
+		}
+	</script>
+</body>
+</html>
