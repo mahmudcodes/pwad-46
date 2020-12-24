@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+</head>
+<body>
+	<h3>Mark Entry</h3>
+	<form action="" name="myForm">
+		<label for="">User Name : </label>
+		<input type="text" name="user_name"><br>
+		<label for="">Password : </label>
+		<input type="text" name="passord"><br>
+		<input type="button" value="Submit" onclick="myFunc()">
+	</form>
+	<script>
+		function myFunc(){
+			var user_name = document.myForm.user_name.value;
+			var passord = document.myForm.passord.value;
+			var user_check = /[A-z0-9]{6,15}/i;
+			var passord_check = /[A-z0-9@_%#+-]{8,15}/i;
+			if(user_name.search(user_check) == -1 || user_name == ""){
+				document.write("<h2 style='color:red'>User name is at least 6 characters long</h2>");
+			}
+			else if (passord.search(passord_check) == -1 || passord == "") {
+				document.write("<h2 style='color:red'>Password is maximum 8 characters long</h2>");
+			}
+			else{
+				document.write("<h2 style='color:green'>Congratulations! Login success.</h2>");
+			}
+		}
+	</script>
+</body>
+</html>

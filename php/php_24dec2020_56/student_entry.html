@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Entry</title>
+</head>
+<body>
+	<h3>Data Entry Form</h3>
+	<form action="" name="myForm">
+		<label for="">Student ID : </label>
+		<input type="text" name="std_id"><br>
+		<label for="">Name : </label>
+		<input type="text" name="name"><br>
+		<label for="">Course : </label>
+		<input type="text" name="course"><br>
+		<label for="">Round : </label>
+		<select name="round">
+			<option value="">Select</option>
+			<option value="Round-46">Round 46</option>
+			<option value="Round-45">Round 45</option>
+			<option value="Round-44">Round 44</option>
+		</select><br>
+		<input type="button" value="Submit" onclick="myFunc()">
+	</form>
+	<script>
+		function myFunc(){
+			var std_id = document.myForm.std_id.value;
+			var name = document.myForm.name.value;
+			var course = document.myForm.course.value;
+			var round = document.myForm.round.value;
+
+			if(std_id==""){
+				alert("Enter student id...");
+			}
+			else if(name=="") {
+				alert("Enter student name...");
+			}
+			else if(course==""){
+				alert("Enter student course...");
+			}
+			else if(round=="") {
+				alert("Enter student round...");
+			}
+			else {
+				var myWindow = window.open("", "myForm", "width=400", "height=300", "top=5", "left=10");
+				myWindow.document.write("<p>Student ID: " + std_id + "</p><p>Name: " + name + "</p><p>Course: " + course + "</p><p>Round: " + round + "</p>");
+				//window.open(method, url, async, user, password);
+			}
+		}
+	</script>
+</body>
+</html>

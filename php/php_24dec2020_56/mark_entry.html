@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Marks</title>
+</head>
+<body>
+	<h3>Mark Entry</h3>
+	<form action="" name="myForm">
+		<label for="">MCQ : </label>
+		<input type="text" name="mcq"><br>
+		<label for="">Descriptive : </label>
+		<input type="text" name="descriptive"><br>
+		<label for="">Evidence : </label>
+		<input type="text" name="evidence"><br>
+		<input type="button" value="Submit" onclick="myFunc()">
+	</form>
+	<script>
+		function myFunc(){
+			var mcq = parseInt(document.myForm.mcq.value);
+			var descriptive = parseInt(document.myForm.descriptive.value);
+			var evidence = parseInt(document.myForm.evidence.value);
+			if(mcq >= 80 && descriptive >= 60 && evidence >= 60){
+document.write("<h2 style='color:green'>You have passed.</h2>");
+			}
+			else {
+				document.write("<h2 style='color:red'>You have failed.</h2>");
+			}
+		}
+	</script>
+</body>
+</html>
