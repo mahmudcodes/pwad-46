@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Email Address</title>
+</head>
+<body>
+	<script>
+		var email = prompt("Enter your email address", "");
+		var check = email.search(/[a-z]+@[a-z]+\.[a-z]{2,4}/);
+		if(check == -1){
+            document.write("Email address is wrong");
+		}
+		else {
+			document.write("Email address is correct");
+		}
+		
+	</script>
+</body>
+</html>

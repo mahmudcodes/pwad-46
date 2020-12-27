@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+</head>
+<body>
+	<h2>Information</h2>
+	<form action="" method="post" name="information">
+		<p>Name: <input type="text" name="name"></p>
+		<p>Contact: <input type="text" name="contact"></p>
+		<p><label for="">Gender: </label>
+		Male <input type="radio" value="Male" name="gender">
+		Female <input type="radio" value="Female" name="gender"></p>
+		<p><label for="">Courses:</label>
+		NT <input type="checkbox" class="courses" value="NT">
+		IAD <input type="checkbox" class="courses" value="IAD">
+		DDD <input type="checkbox" class="courses" value="DDD">
+		ESAD <input type="checkbox" class="courses" value="ESAD"></p>
+		<p><label for="">District: </label>
+		<select name="district">
+			<option value="" readonly>Select</option>
+			<option value="Dhaka">Dhaka</option>
+			<option value="Rajshahi">Rajshahi</option>
+			<option value="Khulna">Khulna</option>
+			<option value="Borishal">Borishal</option>
+		</select></p>
+		
+		<p><label for="">Remarks: </label><br><br>
+		<textarea name="remarks" cols="30" rows="10"></textarea></p>
+		<input type="button" value="Submit" onclick="info()">
+	</form>
+	<script>
+		function info(){
+			var name = document.information.name.value;
+			var contact = document.information.contact.value;
+			var gender = document.information.gender.value;
+			var course = document.getElementsByClassName('courses');
+			var course_list = [];
+			for(var i=0; i<course.length; i++){
+				if(course[i].checked){
+					course_list.push(course[i].value);
+				}
+			}
+			var district = document.information.district.value;
+			var remarks = document.information.remarks.value;
+			if(name == ""){
+				alert("Enter your name...");
+			}
+			else if(contact == ""){
+				alert("Enter your contact...");
+			}
+			else if(gender == ""){
+				alert("Enter your gender...");
+			}
+			else if(course_list == ""){
+				alert("Enter your courses...");
+			}
+			else if(district == ""){
+				alert("Enter your district...");
+			}
+			else if(remarks == ""){
+				alert("Enter your remarks...");
+			}
+			else{
+				var myWindow = window.open("", "information", "height=300, width=300,left=100,top=50");
+				myWindow.document.write("<p>Name: " + name + "</p><p>Contact: " + contact + "</p><p>Gender : " + gender + "</p><p>Courses: " + course_list + "</p><p>District: " + district + "</p><p>Remarks: " + remarks + "</p>"); 
+			}
+		}
+	</script>
+</body>
+</html>
