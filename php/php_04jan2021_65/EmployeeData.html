@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Employee Data</title>
+	<style>
+		.input_form{
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="input_form">
+		<h3>Employee Data</h3>
+		<form action="EmployeeInfo.php" method="post">
+			<table>
+				<tr>
+					<td>ID:</td>
+					<td><input type="text" name="id"></td>
+				</tr>
+				<tr>
+					<td>Name</td>
+					<td><input type="text" name="name"></td>
+				</tr>
+				<tr>
+					<td>Designation</td>
+					<td><input type="text" name="designation"></td>
+				</tr>
+				<tr>
+					<td>Basic</td>
+					<td><input type="text" name="basic"></td>
+				</tr>
+				<tr>
+					<td>House Rent</td>
+					<td><input type="text" name="house_rent"></td>
+				</tr>
+				<tr>
+					<td>Transport</td>
+					<td><input type="text" name="transport"></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Submit" name="submit">
+						<input type="reset" value="Reset">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
