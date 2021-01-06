@@ -1,0 +1,36 @@
+Command:
+
+Using Command Prompt: E:\XAMPP\mysql\bin
+
+Shell
+mysql -h localhost -u root -p
+
+exit
+
+Mysql Commands:
+
+show databases;
+
+use test(database name);
+
+show tables;
+
+describe (table name);
+
+create database (database name);
+
+create table mahmud_extra (
+	id int(10) NOT NULL auto_increment,
+	name varchar(50) NOT NULL,
+	email varchar(50) NOT NULL,
+	phone varchar(20) NULL,
+	PRIMARY KEY(id) 	
+)
+varchar - Variable Character
+
+DROP TABLE mahmud_hasan;
+
+DROP DATABASE mahmud_hasan;
+
+INSERT INTO mahmud_hasan(id, name, email, phone) VALUES (NULL, "Ismail Parvez", "ismail@gmail.com", "01658-854123");
+
