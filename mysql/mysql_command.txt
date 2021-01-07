@@ -1,0 +1,62 @@
+Command:
+
+Using Command Prompt: E:\XAMPP\mysql\bin
+
+Shell
+mysql -h localhost -u root -p
+
+exit
+
+Mysql Commands:
+
+show databases;
+
+use test(database name);
+
+show tables;
+
+describe (table name);
+
+create database (database name);
+
+create table mahmud_extra (
+	id int(10) NOT NULL auto_increment,
+	name varchar(50) NOT NULL,
+	email varchar(50) NOT NULL,
+	phone varchar(20) NULL,
+	PRIMARY KEY(id) 	
+)
+varchar - Variable Character
+
+DROP TABLE mahmud_hasan;
+
+DROP DATABASE mahmud_hasan;
+
+INSERT INTO mahmud_hasan(id, name, email, phone) VALUES (NULL, "Ismail Parvez", "ismail@gmail.com", "01658-854123");
+
+SELECT * FROM employess
+
+SELECT lastname, firstname FROM employess
+
+SELECT employeeNumber, lastName, jobTitle FROM employees ORDER BY employeeNumber DESC
+
+SELECT lastName, firstName, email, jobTitle FROM employees WHERE jobTitle='VP Sales'
+
+SELECT firstName, lastName, jobTitle FROM employees WHERE jobTitle='Sales Rep' AND officeCode='3'
+
+SELECT firstName, lastName, jobTitle, reportsTo FROM employees WHERE jobTitle='Sales Rep' AND officeCode='7' OR  reportsTo>1100
+
+SELECT DISTINCT lastName FROM employees
+
+SELECT state FROM customers GROUP BY state
+
+SELECT orderNumber FROM orderdetails GROUP BY orderNumber HAVING SUM(quantityOrdered * priceEach) > 60000
+
+SELECT orderNumber, quantityOrdered, priceEach, (priceEach * quantityOrdered)<5000 AS totalprice FROM orderdetails GROUP BY orderNumber
+
+SELECT productCode, productName, buyPrice FROM products WHERE buyPrice BETWEEN 90 AND 101
+
+SELECT productCode, productName, buyPrice FROM products WHERE buyPrice NOT BETWEEN 90 AND 100
+
+INSERT INTO tasks(`task_id`,`title`,`start_date`,`due_date`,`priority`,`description`) VALUES (NULL, 'kichu akta', '2021-02-10', '2021-02-20', 'yes', 'this is sample data');
+
