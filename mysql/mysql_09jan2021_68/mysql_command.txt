@@ -1,0 +1,61 @@
+Command:
+
+CREATE TABLE employee3(
+	id int not null AUTO_INCREMENT,
+    name varchar(100) not null,
+    department varchar(100) not null,
+    position varchar(50)  null,
+    manager tinyint NOT null DEFAULT null,
+    level tinyint null, 
+    join_date date,
+    PRIMARY KEY(id)
+);
+
+INSERT INTO users VALUES('', 'Mehrab Hossain', 'mehrab@gmail.com', 'Dhaka', 22, 13500),
+('', 'Nur Hossain', 'nur@gmail.com', 'Rajshahi', 26, 14500),
+('', 'Ali Hossain', 'ali@gmail.com', 'Comilla', 25, 15500),
+('', 'Kamran Hossain', 'kamran@gmail.com', 'Rajshahi', 20, 16500),
+('', 'Midul Islam', 'midul@gmail.com', 'Rajshahi', 21, 14500)
+
+UPDATE users SET name='mahmud', WHERE id='6'
+
+DELETE FROM users WHERE id='6'
+
+AlTER TABLE employee
+ADD Email varchar(55) AFTER joindate;
+
+AlTER TABLE employee
+DROP Email;
+
+AlTER TABLE employee
+MODIFY Email varchar(55);
+
+AlTER TABLE employee
+RENAME TO new_employee;
+
+AlTER TABLE new_employee_11 CHANGE Email org_email varchar(5);
+
+SELECT employeeNumber, lastName, jobTitle, city, phone, country 
+FROM employees, offices 
+WHERE offices.officeCode = employees.officeCode
+
+SELECT orders.orderNumber, orderDate, status, productCode, quantityOrdered 
+FROM orders, orderdetails
+WHERE orders.orderNumber = orderdetails.orderNumber
+
+CREATE VIEW order_status AS 
+SELECT orders.orderNumber, orderDate, status, productCode, quantityOrdered 
+FROM orders, orderdetails
+WHERE orders.orderNumber = orderdetails.orderNumber
+
+CREATE TRIGGER before_users_delete
+BEFORE DELETE ON users
+FOR EACH ROW
+INSERT INTO users_backups
+SET id = OLD.id,
+	name = OLD.name,
+	email = OLD.email,
+	location = OLD.location,
+	age = OLD.age,
+	salary = OLD.salary,
+	del_date = NOW();
