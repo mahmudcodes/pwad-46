@@ -1,0 +1,93 @@
+Command:
+
+CREATE TABLE employeeNew(
+	id int unsigned not null AUTO_INCREMENT,
+    employee_id char(8) not null,
+    first_name varchar(100) not null,
+    last_name varchar(100) not null,
+    email varchar(100) not null,
+    phone char(10) not null,
+    salary decimal(8,2) not null,
+    PRIMARY KEY(id)
+);
+
+CREATE VIEW employee_sample_data AS
+SELECT employee_id, first_name, last_name, salary FROM employeenew
+
+SELECT * FROM employee_sample_data
+
+INSERT INTO employee_sample_data(employee_id, first_name, last_name, salary) VALUES ('ffffffffff', 'ffffffffff', 'ffffffffffff',20);
+
+UPDATE employee_sample_data SET salary='000.000' WHERE employee_id='	
+ffffffff'
+
+DELETE FROM employee_sample_data WHERE employee_id='em20'
+
+create table employee_log(
+	log_id int not null auto_increment,
+	employee_id mediumint not null,
+	event varchar(10),
+	date_time datetime,
+	primary key(log_id)
+);
+
+
+DELIMITER //
+create trigger after_insert_employee
+after insert on employeenew
+for each row
+begin
+insert into employee_log
+
+END;//
+
+
+DELIMITER $$
+
+CREATE TRIGGER after_insert_employee
+AFTER INSERT
+ON employeenew FOR EACH ROW
+BEGIN
+    
+        INSERT INTO employee_log(log_id, employee_id,event,date_time)
+        VALUES('',NEW.employee_id,'create', now());
+    
+END$$
+
+DELIMITER ;
+
+
+DELIMITER $$
+
+CREATE TRIGGER before_update_employee
+BEFORE UPDATE
+ON employeenew FOR EACH ROW
+BEGIN
+    
+        INSERT INTO employee_log(log_id, employee_id,event,date_time)
+        VALUES('',old.employee_id,'update', now());
+    
+END$$
+
+DELIMITER ;
+
+
+DELIMITER $$
+
+CREATE TRIGGER before_delete_employee
+BEFORE DELETE ON employeenew 
+FOR EACH ROW
+BEGIN
+    
+        INSERT INTO employee_log(log_id, employee_id,event,date_time)
+        VALUES('',old.employee_id,'delete', now());
+    
+END$$
+
+DELIMITER ;
+
+create user 'mmm'@'localhost' identified by '1234';
+
+grant select, insert, delete on 
+pwad_50.* to mahmud46@'localhost'
+identified by 'admin123'
