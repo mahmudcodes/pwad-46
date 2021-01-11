@@ -1,0 +1,27 @@
+Command:
+
+************************
+	Grant or Revoke
+************************
+
+create user 'alim'@'localhost' identified by 'password'
+
+drop user 'alim'@'localhost'
+
+rename user 'alim'@'localhost' to 'abdulalim'@'localhost'
+
+grant select, insert on pwad46.* to 'abdulalim'@'localhost' identified by 'password'
+
+grant update, delete on pwad46.students1 to 'abdulalim'@'localhost'
+
+column level privileges
+grant update (name) on pwad46.students1 to 'abdulalim'@'localhost'
+
+Privileges withdraw
+revoke insert on pwad.* from 'abdulalim'@'localhost'
+
+revoke all privileges on pwad46.* from 'alim'@'localhost'
+
+copy table:
+create table new_users SELECT * from users
+
