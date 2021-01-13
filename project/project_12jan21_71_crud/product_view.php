@@ -58,6 +58,7 @@
           <?php
           $sql = "SELECT * FROM products";
           $data = $db->query($sql);
+          
           ?>
           <table class="table table-striped table-hover">
             <thead>
@@ -71,9 +72,12 @@
               </tr>
             </thead>
             <tbody>
+              
+
               <?php while ($row = $data->fetch_assoc()) {
 
                 ?>
+                <?php if($row){ ?>
                 <tr>
                   <th scope="row"><?php echo $row['id']; ?></th>
                   <td><?php echo $row['product_name']; ?></td>
@@ -92,6 +96,11 @@
                     </a>
                   </td>
                 </tr>
+              <?php }else{ ?>
+                
+                  <p>No Data Available!!</p>
+                
+              <?php } ?>
               <?php } ?>
             </tbody>
           </table>

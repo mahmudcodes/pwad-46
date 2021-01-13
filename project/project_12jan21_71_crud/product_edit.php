@@ -24,7 +24,7 @@
     <div class="table-title">
       <div class="row">
         <div class="col-sm-9">
-          <h2>CRUD | <b>Create Product</b></h2>
+          <h2>CRUD | <b>Edit Product</b></h2>
         </div>
         <div class="col-sm-3 right">
           <a href="product_view.php" class="btn btn-success">
@@ -37,12 +37,13 @@
 				require_once('connection_obj.php');
 
 				$sql = "SELECT * FROM products WHERE id=$id";
-				$db->query($sql);
+				$data = $db->query($sql);
+        $row = $data->fetch_assoc();
 		?>
         <form action="" method="POST">
         	<div class="form-group">
         		<label for="product_name">Product Name</label>
-        		<input type="text" class="form-control" value="<?php echo $product_name; ?>">
+        		<input type="text" class="form-control" value="<?php echo $row['product_name']; ?>">
         	</div>
         	<div class="form-group">
         		<label for="product_code">Product Code</label>
