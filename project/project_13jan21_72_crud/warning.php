@@ -19,12 +19,14 @@
 
     <div class="col-sm-8 text-left">
     <br><br><br><br> 
+    
       <div class="jumbotron">
         <div class="text-danger text-center">
           <h1 class="text-center ">Error! </h1>
           <a href="index.php" class="btn btn-warning">Bact to Home</a>
         </div>    
       </div>
+    
       
       
     </div>
