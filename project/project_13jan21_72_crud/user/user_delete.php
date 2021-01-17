@@ -1,5 +1,5 @@
 <?php
-		include('../includes/db_connect.php');
+		include('includes/db_connect.php');
 	if($_SERVER['REQUEST_METHOD'] == 'GET'){
 		$msg = '';
 		$id = $_GET['id'];

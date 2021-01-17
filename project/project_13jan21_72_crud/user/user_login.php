@@ -18,14 +18,10 @@
       <?php include('includes/left_side.php'); ?>
 
       <div class="col-sm-8 text-left"> 
-        <h1 class="text-center">Create User</h1>
+        <h1 class="text-center">User Login</h1>
         <!-- From Close -->
         <div class="well">
-          <form action="user_submit.php" method="POST">
-            <div class="form-group">
-              <label for="fullname">Full Name</label>
-              <input type="text" class="form-control" name="fullname">
-            </div>
+          <form action="user_login_submit.php" method="POST">
             <div class="form-group">
               <label for="email">Email</label>
               <input type="text" class="form-control" name="email">

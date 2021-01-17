@@ -5,22 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <?php include('../includes/head_file.php'); ?>
+  <?php include('includes/head_file.php'); ?>
 
 </head>
 <body>
 
-  <?php include('../includes/header.php'); ?>
+  <?php include('includes/header.php'); ?>
   
   <div class="container-fluid text-center">    
     <div class="row content">
 
-      <?php include('../includes/left_side.php'); ?>
+      <?php include('includes/left_side.php'); ?>
 
       <div class="col-sm-8 text-left"> 
         <h1 class="text-center">Edit User</h1>
         <?php 
-            require_once '../includes/db_connect.php';
+            require_once 'includes/db_connect.php';
             $id = $_GET['id'];
             $data = "SELECT * FROM users WHERE id='$id' ";
             $read = $db->query($data);
@@ -39,18 +39,18 @@
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="text" class="form-control" name="password" value="<?php echo $row['password']; ?>">
+              <input type="text" class="form-control" name="password" >
             </div>
             <button type="submit" class="btn btn-info">Update</button>
           </form>
         </div>
       </div>
       <!-- Form Close -->
-      <?php include('../includes/right_side.php'); ?>
+      <?php include('includes/right_side.php'); ?>
 
     </div>
 
-    <?php include('../includes/footer.php'); ?>
+    <?php include('includes/footer.php'); ?>
 
   </body>
   </html>

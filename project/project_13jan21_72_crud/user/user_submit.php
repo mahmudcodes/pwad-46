@@ -1,12 +1,13 @@
 
 <?php
 
-	require_once '../includes/db_connect.php';
+	require_once 'includes/db_connect.php';
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$fullname = $_POST['fullname']; 
 		$email = $_POST['email'];
 		$password = $_POST['password'];
+		$password = md5($password);
 		$msg = '';
 
 		if($fullname !=='' || $email !=='' || $password !==''){
