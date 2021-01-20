@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<button id="firs">First</button>
+	<button id="las">Last</button>
+	<div>
+		<p>First ....................... Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Hic, cupiditate ipsa aperiam dolor magni, neque ratione exercitationem? Voluptatem obcaecati praesentium, inventore vitae neque nam molestiae officia. Quo nesciunt soluta aperiam ea quasi in blanditiis aspernatur culpa, aliquam earum harum, consequatur eius, minima, consequuntur autem explicabo. Eius illo consequatur nulla adipisci.</p>
+	</div>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Hic, cupiditate ipsa aperiam dolor magni, neque ratione exercitationem? Voluptatem obcaecati praesentium, inventore vitae neque nam molestiae officia. Quo nesciunt soluta aperiam ea quasi in blanditiis aspernatur culpa, aliquam earum harum, consequatur eius, minima, consequuntur autem explicabo. Eius illo consequatur nulla adipisci.</p>
+	</div>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Hic, cupiditate ipsa aperiam dolor magni, neque ratione exercitationem? Voluptatem obcaecati praesentium, inventore vitae neque nam molestiae officia. Quo nesciunt soluta aperiam ea quasi in blanditiis aspernatur culpa, aliquam earum harum, consequatur eius, minima, consequuntur autem explicabo. Eius illo consequatur nulla adipisci.</p>
+	</div>
+	<div>
+		<p>Last ............................. Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Hic, cupiditate ipsa aperiam dolor magni, neque ratione exercitationem? Voluptatem obcaecati praesentium, inventore vitae neque nam molestiae officia. Quo nesciunt soluta aperiam ea quasi in blanditiis aspernatur culpa, aliquam earum harum, consequatur eius, minima, consequuntur autem explicabo. Eius illo consequatur nulla adipisci.</p>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#firs").click(function(){
+				$("div:first").hide();
+			});
+			$("#las").click(function(){
+				$("div:last").hide();
+			});
+		});
+	</script>
+</body>
+</html>

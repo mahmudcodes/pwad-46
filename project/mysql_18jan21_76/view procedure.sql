@@ -20,3 +20,5 @@ CREATE TABLE student_info(
 // CREATE TRIGGER
 
 CREATE TRIGGER `after_delete_student` AFTER DELETE ON `student_info` FOR EACH ROW DELETE FROM present_address WHERE stinfo_id = OLD.id
+
+SELECT COUNT(`customerNumber`), country From costomers GROUP BY Country

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<p>This is paragraph One</p>
+	<p>This is paragraph Two</p>
+	
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var para = $("p");
+
+			for(i=0; i<para.length; i++){
+				alert("Found Paragraph: " + para[i].innerHTML);
+			}
+		});
+		
+	</script>
+	
+</body>
+</html>

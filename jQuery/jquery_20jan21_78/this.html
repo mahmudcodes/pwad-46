@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<script>
+
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+
+	<button id="btn1">Click Here</button>
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sit amet, illo dolores ratione repellendus enim nobis id ipsum alias vel, saepe consequatur eum quidem veniam, voluptatum perferendis temporibus, eveniet.</p>
+
+	<p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore numquam aliquid vitae voluptate officia beatae doloribus. Recusandae nostrum autem quos.</p>
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".test").click(function(){
+				$(this).toggle();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ajax Data</title>
+</head>
+<body>
+	<form action="">
+		<p>
+			Show List of: 
+			<select id="choice">
+				<option value="">Select</option>
+				<option value="Good_Boy">Good Boy</option>
+				<option value="Bad_Boy">Bad Boy</option>
+			</select>
+		</p>
+		<p id="result">
+			
+		</p>
+	</form>
+	<script src="../../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#choice").change(function(){
+				if($(this).val() != ""){
+					$.get(
+						'data.php',
+						{ what : $(this).val() },
+						function(data){
+							$("#result").html(data);
+						}
+					);
+					//alert("Selected: " + $(this).val() );
+				}
+				else{
+					$("#result").html("No Data Selected");
+				}
+			});
+		});
+	</script>
+</body>
+</html>
