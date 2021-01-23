@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<h2>List One</h2>
+	<ul>
+		<li>Apple</li>
+		<li>Mango</li>
+		<li>Orange</li>
+	</ul>
+	<h2>List Two</h2>
+	<ul>
+		<li>PHP</li>
+		<li>jQuery</li>
+		<li>JavaScript</li>
+	</ul>
+	<button id="btn">Click Here</button>
+
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$("ul li:first-child").hide();
+			});
+			$("#btn").click(function(){
+				$("ul li:last-child").hide();
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

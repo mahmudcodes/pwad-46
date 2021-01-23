@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<button>Button 1</button>
+	<button>Button 2</button>
+	<button>Button 3</button>
+	<button>Button 4</button>
+	<form action="">
+		<input type="button" value="Button 5" class="button">
+	</form>
+	<table>
+		<tr>
+			<td>
+				<button>Button 6</button>
+			</td>
+		</tr>
+	</table>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// $("#btn1, #btn2").click(function(){});
+			$(".button").click(function(){
+				$(":button").hide();
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

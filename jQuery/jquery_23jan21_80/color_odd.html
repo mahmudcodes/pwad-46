@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<table class="td">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Mobile</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>Hasan</td>
+			<td>24</td>
+			<td>+18936</td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>Hasan</td>
+			<td>24</td>
+			<td>+18936</td>
+		</tr>
+		<tr>
+			<td>03</td>
+			<td>Hasan</td>
+			<td>24</td>
+			<td>+18936</td>
+		</tr>
+		<tr>
+			<td>04</td>
+			<td>Hasan</td>
+			<td>24</td>
+			<td>+18936</td>
+		</tr>
+		<tr>
+			<td>05</td>
+			<td>Hasan</td>
+			<td>24</td>
+			<td>+18936</td>
+		</tr>
+	</table>
+	<button id="btn">Click Me</button>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				$("tr:even").css("background-color", "red");
+				$("tr:odd").css("background-color", "green");
+				$(".td").css("border", "5");
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

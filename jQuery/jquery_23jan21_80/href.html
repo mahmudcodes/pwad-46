@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<p>Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Tenetur consequatur quia hic provident culpa magnam accusantium dolor mollitia quasi nam!</p>
+	<a href="https://www.ibm.com" target="_blank">IBM</a><br><br>
+	<a href="https://www.yahoo.com">Yahoo</a><br><br>
+	<a href="https://www.google.com" target="_blank">Google</a><br><br>
+	<img src="mango.jpg" width="300px" alt=""><br><br>
+	<button class="btn">Click Here</button>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			/*
+			$(".btn").mouseover(function(){
+				//$("[href]").hide();
+				//$("[src]").hide();
+				//$("a").hide();
+				$("a[target='_blank']").hide();
+			});
+			$(".btn").mouseout(function(){
+				//$("[href]").hide();
+				//$("[src]").hide();
+				//$("a").hide();
+				$("a[target='_blank']").show();
+			});
+			*/
+			$(".btn").click(function(){
+				$("a[target!='_blank']").hide();
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>
