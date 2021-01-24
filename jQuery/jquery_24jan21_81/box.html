@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+	<style>
+		.box1{
+			width: 150px;
+			height: 150px;
+			background: red;
+			margin: 5px;
+			display: none;
+		}
+		.box2{
+			width: 150px;
+			height: 150px;
+			background: yellow;
+			margin: 5px;
+			display: none;
+		}
+		.box3{
+			width: 150px;
+			height: 150px;
+			background: green;
+			margin: 5px;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn1">Show Boxes</button>
+	<button id="btn2">Hide Boxes</button>
+	<button id="btn3">Show/Hide Boxes</button>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn1").click(function() {
+				$(".box1").fadeIn();
+				$(".box2").fadeIn('slow');
+				$(".box3").fadeIn(3000);
+			});
+			$("#btn2").click(function() {
+				$(".box1").fadeOut();
+				$(".box2").fadeOut('slow');
+				$(".box3").fadeOut(3000);
+			});
+			$("#btn3").click(function() {
+				$(".box1").fadeToggle();
+				$(".box2").fadeToggle('slow');
+				$(".box3").fadeToggle(3000);
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

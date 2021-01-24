@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+	<style>
+		.box1{
+			width: 200px;
+			height: 200px;
+			background: red;
+			margin: 5px;
+		}
+		.box2{
+			width: 200px;
+			height: 200px;
+			background: yellow;
+			margin: 5px;
+		}
+		.box3{
+			width: 200px;
+			height: 200px;
+			background: green;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn1">Fade To</button>
+
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// $("#btn1").click(function() {
+			// 	$(".box1").fadeTo('fast', '0');
+			// 	$(".box2").fadeTo('slow', '0.1');
+			// 	$(".box3").fadeTo(3000, '0.2');
+			// });
+			$("#btn1").click(function() {
+				$(".box1").fadeTo('fast', Math.random());
+				$(".box2").fadeTo('slow', Math.random());
+				$(".box3").fadeTo(3000, Math.random());
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

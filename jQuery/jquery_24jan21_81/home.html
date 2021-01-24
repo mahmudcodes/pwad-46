@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<h1>Home Page</h1>
+	<div>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam mollitia, voluptas saepe eos quo culpa ipsa dignissimos sapiente explicabo facilis!</p>
+
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nisi labore, provident, tenetur doloremque minima nemo reprehenderit.<br> Quidem quos dignissimos modi suscipit quo voluptatum distinctio, debitis nesciunt error, ut voluptate.
+		</p>
+
+	</div>
+
+	<div id="footer">
+		<a href="#" id="show">Click here for footer</a>
+	</div>
+
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#show").click(function() {
+				$("#footer").load('link.html');
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>
