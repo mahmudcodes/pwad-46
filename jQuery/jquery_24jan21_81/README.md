@@ -5,7 +5,7 @@
 </span>
 
 ## What You Should Already Know
-* HTML        *HTML is the standard markup language for Web pages.*
+* HTML        */HTML is the standard markup language for Web pages./*
 * CSS         *CSS is the language we use to style an HTML document.*
 * JavaScript  *JavaScript is the world's most popular programming language.*
 
