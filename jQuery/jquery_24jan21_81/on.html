@@ -6,11 +6,18 @@
 	<title>jQuery</title>
 </head>
 <body>
-	
+	<p>This is Paragraph!</p>
 	<script src="../jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			
+			$("p").on({
+				click: function(){
+					alert("Text");
+				},
+				onmouseenter: function(){
+					$(this).css("background-color", "red");
+				}
+			});	
 		});
 		
 		/*
