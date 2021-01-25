@@ -1,0 +1,7 @@
+CREATE TABLE products1 (
+   id INT NOT NULL AUTO_INCREMENT,
+   sku CHAR(8) NOT NULL,
+   name VARCHAR(100) NOT NULL,
+   price DOUBLE(5, 2) NOT NULL,
+   PRIMARY KEY(id)
+);
