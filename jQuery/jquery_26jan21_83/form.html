@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<form action="" method="post">
+		<input type="text" name="name" id="name"><br>
+		<input type="text" name="email" id="email"><br>
+		<textarea name="address" id="address" cols="22" rows="6"></textarea><br>
+		<input type="button" name="submit" id="submit" value="Submit">
+	</form>
+	<div id="show"></div>
+	<textarea name="" id="addre" cols="30" rows="10"></textarea>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#submit").click(function() {
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var address = $("#address").val();
+				var info = name + "\n" + email + "\n" + address;
+				
+				$("#show").html(info);
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<button id="btn">Click Here</button>
+	<div class="para"><p>My first paragraph</p></div>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn").click(function() {
+				$(".para").prepend("<p>This is new paragraph..</p>");
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>
