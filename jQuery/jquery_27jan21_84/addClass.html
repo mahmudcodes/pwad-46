@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+	<style>
+		.featured{
+			font-size: 30px;
+			font-weight: bold;
+			color: red;
+		}
+		.topStory{
+			color: yellow;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">Featured</button>
+	<button id="btn1">Top Story</button>
+	<p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laboriosam et sunt numquam quas! Voluptas optio quos magnam quia nostrum, sed, assumenda consequuntur soluta eligendi voluptatem, incidunt odit libero recusandae!</p>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga obcaecati, doloribus, est harum mollitia qui facere! Beatae iure eveniet aspernatur eaque dignissimos doloremque omnis nam, maiores nobis. Officia, delectus, in.</p>
+	<script src="../jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery("#btn").click(function(){
+				jQuery("#para1").removeClass("topStory");
+				jQuery("#para1").addClass("featured");
+			});
+			jQuery("#btn1").click(function(){
+				jQuery("#para1").removeClass("featured");
+				jQuery("#para1").addClass("topStory");
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

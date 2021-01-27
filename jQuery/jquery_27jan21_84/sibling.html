@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<ul>
+		<li>List 1</li>
+		<li>List 2</li>
+		<li class="start">List 3</li>
+		<li>List 4</li>
+		<li>List 5</li>
+		<li>List 6</li>
+	</ul>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("li.start").siblings().css('color', 'red');
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

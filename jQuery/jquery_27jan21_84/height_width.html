@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+	<style>
+		.box1{
+			width: 600px;
+			height: 200px;
+			background: #41D6F1;
+			padding: 20px;
+			border: 20px solid red;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div><br>
+	<div class="box1 box2"></div>
+	<button id="btn">Click Here</button>
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				var x = "";
+				x += "Height is: " + $(".box1").height() + "<br>";
+				x += "Width is: " + $(".box1").width() + "<br>";
+				x += "Inner Height/(padding + height) is: " + $(".box1").innerHeight() + "<br>";
+				x += "Inner Width/(padding + width) is: " + $(".box1").innerWidth() + "<br>";
+				x += "Outer Height/(padding + border + height) is: " + $(".box1").outerHeight() + "<br>";
+				x += "Outer Width(padding + padding + width) is: " + $(".box1").outerWidth() + "<br>";
+				x += "Outer Height (true)/(padding + border + margin + height) is: " + $(".box1").outerHeight(true) + "<br>";
+				x += "Outer Width (true)(padding + border + margin + width) is: " + $(".box1").outerWidth(true) + "<br>";
+				$(".box1").html(x);
+			});
+			$("#btn").click(function(){
+				var x = $(".box1").height();
+				var y = $(".box1").innerHeight();
+				var z = y - x;
+				$(".box2").html("Padding is: " + z);
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>

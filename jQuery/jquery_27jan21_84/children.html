@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery</title>
+</head>
+<body>
+	<ul>
+		<li>Bangladesh</li>
+		<li>India</li>
+		<li>Pakistan</li>
+	</ul>
+
+	<script src="../jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("ul").children().css({
+				color: 'white',
+				fontSize: '30px',
+				backgroundColor: 'red',
+				margin: '5px',
+				width: '150px',
+				padding: '10px',
+				listStyle: 'none',
+				textAlign: 'center',
+				border: '1px solid #fff',
+				borderRadius: '10px'
+				
+			});
+		});
+		
+		/*
+		Short Start
+
+		$(function(){
+
+		});
+		*/
+	
+	</script>
+</body>
+</html>
