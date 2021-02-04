@@ -1,0 +1,34 @@
+{
+  "name": "Parallax-One",
+  "nicename": "Parallax One",
+  "version": "2.1.7",
+  "description": "Parallax One theme",
+  "category": "themes",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Codeinwp/Parallax-One.git"
+  },
+  "keywords": [
+    "wordpress-theme"
+  ],
+  "theme": {
+    "textdomain": "parallax-one"
+  },
+  "author": "ThemeIsle <friends@themeisle.com>",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/Codeinwp/Parallax-One/issues"
+  },
+  "pot": {
+    "reportmsgidbugsto": "https://github.com/Codeinwp/Parallax-One/issues",
+    "languageteam": "Themeisle Translate <friends@themeisle.com>",
+    "lasttranslator": "Themeisle Translate Team <friends@themeisle.com>"
+  },
+  "devDependencies": {
+    "grunt-theme-fleet": "codeinwp/grunt-theme-fleet",
+    "load-project-config": "~0.2.0"
+  },
+  "wraithSlug": [
+    "parallax-one"
+  ]
+}
