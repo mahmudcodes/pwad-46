@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Search</title>
+	<style type="text/css">
+		p { border:1px solid black;width:500px;padding:5px;}
+		.highlight { background-color:yellow; }
+	</style>
+</head>
+<body>
+	<form>
+		<p>
+			Yet Greene has allied herself with Trump, and many House Republicans say she shouldn't be punished for views expressed before she was an elected member of Congress -- even as lawmakers in both parties are alarmed at revelations that she suggested school massacres were staged events and made many other shocking and racist claims.
+		</p>
+		<p>
+			"I spoke to Leader McCarthy this morning, and it is clear there is no alternative to holding a Floor vote on the resolution to remove Rep. Greene from her committee assignments," Hoyer said in a statement. "The Rules Committee will meet this afternoon, and the House will vote on the resolution tomorrow."
+		</p>
+		<p>
+			House Majority Leader Steny Hoyer, a Maryland Democrat, made the first move toward stripping Greene of her roles on two important House committees after speaking with McCarthy on Wednesday.
+		</p>
+		<input type="text" id="text"/>
+		<input type="button" id="search" value="Search"/>
+		<input type="button" id="clear" value="Clear"/>
+	</form>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function ()
+		{
+			$('#search').click(highlight);
+			$('#clear').click(clearSelection);
+			function highlight()
+			{
+				var searchText = $('#text').val();
+				var regExp = new RegExp(searchText, 'g');
+				clearSelection();
+				$('p').each(function()
+				{
+					var html = $(this).html();
+					var newHtml = html.replace(regExp,
+						'<span class="highlight">'+searchText+'</span>');
+					$(this).html(newHtml);
+				});
+			}
+			function clearSelection()
+			{
+				$('p').each(function()
+				{
+					$(this).find('.highlight').each(function()
+					{
+						$(this).replaceWith($(this).html());
+					});
+				});
+			}
+		});
+	</script>
+</body>
+</html>
