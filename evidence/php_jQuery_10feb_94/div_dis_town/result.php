@@ -35,20 +35,20 @@
 		$(document).ready(function(){
 			$("#divisions").change(function(){
 				var divisions = $("#divisions").val();
-				$.get('divisions.php', {div:divisions}, function(divi){
-					$("#district").html(divi);
+				$.get('districts.php', {div:divisions}, function(d){
+					$("#district").html(d);
 				});
 			});
 			$("#district").change(function(){
 				var district = $("#district").val();
-				$.get('district.php', {dis:district}, function(dist){
-					$("#towns").html(dist);
+				$.get('town.php', {dis:district}, function(d){
+					$("#towns").html(d);
 				});
 			});
 			$("#towns").change(function(){
 				var towns = $("#towns").val();
-				$.get('towns.php', {town:towns}, function(tow){
-					$("#town_info").html(tow);
+				$.get('towns.php', {town:towns}, function(d){
+					$("#town_info").html(d);
 				});
 			});
 		});
